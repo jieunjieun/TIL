@@ -39,6 +39,6 @@
 
 ㄴ 현재 프로젝트에 등록된 리모트 저장소 확인 가능
 
-`$ git push`
+`$ git push origin master`
 
 ㄴ 커밋들을 원격저장소로 보내기
