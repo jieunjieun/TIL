@@ -18,8 +18,42 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 	],
 	"likes" : 10
 }
+```
+
+
+
+### 제한자 사용하기: $set, $inc - 갱신 제한자
+
+갱신 제한자는 키를 변경, 추가, 제거하고 심지어 배열과 내장 문서를 조작하는 복잡한 갱신연산을 지정하는데 사용되는 특수키다.
 
 ```
+> db.study.insert({"url":"www.example.com"},{"pageView":51})
+WriteResult({ "nInserted" : 1 })
+> db.study.update({"url":"www.example.com"},{$inc:{"pageView":1}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.study.find().pretty()
+{
+	"_id" : ObjectId("58de58f5dcb45c83aec5bc39"),
+	"url" : "www.example.com",
+	"pageView" : 1
+}
+```
+
+### $inc제한자
+
+$inc제한자는 이미 존재하는 키의 값을 변경하거나 새롭게 키를 생성하는데 사용한다.
+
+분석, 분위기 또는 투표 등과 같이 자주 변하는 수치값을 갱신하는 데 매우 유용하다. 
+
+
+
+### $set 제한자
+
+$set 제한자는 필드의 값을 설정한다. 만약 필드가 존재하지 않으면 해당 필드를 생성한다. 
+
+이 기능은 스키마를 갱신하거나 사용자 정의 키를 추가할 때 편리하게 쓸 수 있다. 
+
+
 
 ### 데이터 삽입 및 수정 정리
 
