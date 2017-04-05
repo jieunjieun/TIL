@@ -44,4 +44,5 @@ var server = app.listen(port, function(){
  console.log("Express server has started on port " + port)
 });
 
+
 mongoose.connect('mongodb://localhost/mongodb_tutorial');
