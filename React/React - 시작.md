@@ -16,20 +16,21 @@
 
   - 커스텀 태그란 <h1>,<select>처럼 미리 지정된 태그 외에 나만의 태그를 만들어 웹을 개발하는 방식이다.
 
-    ```react
-    var CheckLink = React.createClass({
-      render : function(){
-        ...코드코드
-      }
-    });
+```
+react
+var CheckLink = React.createClass({
+render : function(){
+//codecodecode
+}
+});
 
-    React.render(
-    <CheckLink href = "/checked.html">
-    Click here!
-    </CheckLink>,
-    document.getElementById('example')
-    );
-    ```
+React.render(
+<CheckLink href = "/checked.html">
+Click here!
+</CheckLink>,
+document.getElementById('example')
+);
+```
 
 - Virtual DOM을 지원한다.
 
@@ -39,17 +40,17 @@
 
         ​	DOM자체는 빠른데 브라우저 단에서 DOM에 변화를 주면 브라우저가 CSS를 다시 연산 하고 레이아웃 구성하느라 시간이 허비되는것임. 이렇게 웹 페이지에서 색상변경과 같은 레이아웃에 관계없는 것들을 처리하는것을 repaint라고 한다. 레이아웃을 다시 구성하는것은 reflow라고 함. 
 
-        ```react
-        var style = document.body.style;
+```react
+var style = document.body.style;
 
-        style.padding = "20px"; //reflow, repaint
-        style.border = "10px solid red"; //reflow, repaint
-        style.color = "blue"; //repaint
-        style.color = backgroundColor = "#ffa"; //repaint
-        style.fontSize = "1em"; //reflow, repaint
+style.padding = "20px"; //reflow, repaint
+style.border = "10px solid red"; //reflow, repaint
+style.color = "blue"; //repaint
+style.color = backgroundColor = "#ffa"; //repaint
+style.fontSize = "1em"; //reflow, repaint
 
-        document.body.appendChild(document.createTextNode('hello world'));
-        ```
+document.body.appendChild(document.createTextNode('hello world'));
+```
 
   Virtual DOM 사용하면 실제 DOM에 접근하여 조작하긴 하지만 이를 또 추상화를 시켜서 만든 자바스크립트 객체를 구성해서 사용함. 쉽게 말해 DOM의 사본이라고 봐도 됨.
 
@@ -75,4 +76,4 @@
 - Component의 가독성이 높음. 
 - 쉬운 유지보수
 - 클라이언트, 서버측에서 각각 렌더링 가능함.
-- 프레임워크가 아닌 라이브러리 이기 때문에 다른 프레임워크와 같이 사용 가능.
+- 프레임워크가 아닌 라이브러리 이기 때문에 다른 프레임워크와 같이 사용 가능하다.
