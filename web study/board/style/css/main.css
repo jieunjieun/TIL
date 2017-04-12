@@ -1,0 +1,34 @@
+#Insert-data{
+width: 25%;
+height: 500px;
+background-color: red;
+float: left;
+}
+
+#Get_data{
+    width: 25%;
+    height: 500px;
+    background-color: green;
+    float: left;
+}
+
+#Update_data{
+    width: 25%;
+    height: 500px;
+    background-color: orange;
+    float: left;
+}
+
+#Delete_data{
+    width: 25%;
+    height: 500px;
+    background-color: blue;
+    float: left;
+}
+
+#title{
+    font-size: 40px;
+    color : white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
