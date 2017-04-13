@@ -122,3 +122,125 @@ function add (a, b, c, d, e, f){
 console.log(add(...data1, ...data2));  //21
 ```
 
+
+
+```javascript
+let array = [1,2,3];
+let[a, , b] = array;
+console.log(a,b); //1,3
+
+let array2 = [1,2,3];
+let [c, ...d] = array2;
+
+console.log(c);  //1
+console.log(d);  //2,3
+
+let array3 = [1,2,3,4];
+let[e, , ...f] = array3;
+console.log(e);  //1
+console.log(f);  //3,4
+```
+
+
+
+```
+let array = [1,2];
+let [a, b, c = 3] = array;
+
+console.log(a,b,c);  //1,2,3
+
+function test1(a = 1, b = 2, c = 3){
+  return a + b + c;
+}
+console.log(test1());  //6
+```
+
+
+
+## ES6문법 - arrow function
+
+```javascript
+let add = function(a,b){
+  return a + b
+}
+```
+
+를 ES6에서는 이렇게 바꿀 수 있다.
+
+```Javascript
+let add = (a,b) => a + b
+```
+
+또
+
+```Javascript
+let add = function(a){
+  console.log(a)
+}
+```
+
+를 arrow function의 형태로 바꾸면
+
+```javascript
+let add = (a) => {
+  console.log(a)
+}
+```
+
+
+
+## ES6문법 - Object Merge
+
+```javascript
+Object.assign(
+{},
+{Hello : 'jieun'},
+{Hi : "Oh My God"}
+);
+
+//{
+//Hello : 'jieun'
+//Hi : 'Oh My God'
+//}
+```
+
+Object.assign을 쓰게 되면 위 예제에서는 {}의 빈배열 안에 나머지 두 오브젝트들을 넣어준다. 
+
+즉 그냥 합쳐주는 것이다.
+
+
+
+## 예제
+
+```javascript
+//배열인자 예제
+
+const array = (...elements) =>{
+  return elements;
+};
+
+array (1,2,3) //[1,2,3]
+
+const log = (...args) =>{
+  console.log(...args);
+}
+log('hello','Seoul'); //hello Seoul
+```
+
+```javascript
+//배열식의 변수 선언
+
+const lang = ['javascript','Ruby','Haskell'];
+const [js, ...rest] = langs;
+
+js === 'javascript'
+rest[0] === 'Ruby';
+rest[1] === 'Haskell';
+
+const head = ([x]) => x;
+
+head([1,2,3]) === 1;
+```
+
+
+
