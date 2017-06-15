@@ -60,7 +60,7 @@ let cardsList = [
         done : false
       }
     ]
-  },
+  }
 ];
 
 render(<KanbanBoard cards={cardsList}/>, document.getElementById('root'));

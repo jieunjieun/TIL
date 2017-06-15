@@ -2,34 +2,35 @@
   box-sizing: border-box;
 }
 
-html, body, #app{
-  height: 100%;
+html,body,#root {
+  height:100%;
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background: #eee;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1{
   font-weight: 200;
-  color : #3b414c;
+  color: #3b414c;
   font-size: 20px;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.app{
+.app {
   white-space: nowrap;
-  height: 100%;
+  height:100%;
 }
 
-.list{
+.list {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -45,12 +46,12 @@ ul{
   position: absolute;
   top: 0;
   right: 0;
-  widows: 1px;
+  width: 1px;
   height: 99%;
   background: linear-gradient(to bottom, #eee 0%, #ccc 50%, #eee 100%) fixed;
 }
 
-.card{
+.card {
   position: relative;
   z-index: 1;
   background: #fff;
@@ -60,25 +61,25 @@ ul{
   overflow: auto;
   border: 1px solid #e5e5df;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card__title{
+.card__title {
   font-weight: bold;
   border-bottom: solid 5px transparent;
 }
 
-.card__title:before{
+.card__title:before {
   display: inline-block;
-  widows: 1em;
-  content: '▶︎';
+  width: 1em;
+  content: '▸';
 }
 
-.card__title--is-open:before{
-  content:"▼"
+.card__title--is-open:before {
+  content: '▾';
 }
 
-.checklist__task:first-child{
+.checklist__task:first-child {
   margin-top: 10px;
   padding-top: 10px;
   border-top: dashed 1px #ddd;
@@ -87,5 +88,5 @@ ul{
 .checklist__task--remove:after{
   display: inline-block;
   color: #d66;
-  content : "+";
+  content: "✖";
 }
