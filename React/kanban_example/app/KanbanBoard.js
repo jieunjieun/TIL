@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import List from './List';
 import {render} from 'react-dom';
-
+import marked from 'marked';
 class KanbanBoard extends Component{
     render(){
         return(

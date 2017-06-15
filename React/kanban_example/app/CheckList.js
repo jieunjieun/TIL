@@ -20,6 +20,7 @@
 // }
 // export default CheckList;
 import React, { Component } from 'react';
+import marked from 'marked';
 
 class CheckList extends Component{
     render(){

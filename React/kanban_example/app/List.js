@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Card from './Card';
 import {render} from 'react-dom';
+import marked from 'marked';
+
 
 class List extends Component{
     render(){
@@ -8,6 +10,7 @@ class List extends Component{
             return <Card id={card.id}
             title = {card.title}
             description={card.description}
+            color = {card.color}
             tasks={card.tasks}/>
 
         });
