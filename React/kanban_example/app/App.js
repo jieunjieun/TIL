@@ -34,16 +34,16 @@ import KanbanBoard from './KanbanBoard';
 let cardsList = [
   {
     id : 1,
-    title : 'Read the Book',
-    description : "I should read the whole book",
+    title : '독서하기',
+    description : "책 전체 다 읽기",
     color : '#BD8D31',
     status : "in-progress",
     tasks : []
   },
   {
     id : 2,
-    title : "Write some code",
-    description : "Code along with the samples in the book.The complete source can be found at[github](https://github.com/pro-react)",
+    title : "코딩하기",
+    description : "책에있는 예제 코드들 다 해보기.내가 짠 코드들은 [github](https://github.com/Ground-Silver0903) 에 있습니당",
     status : "todo",
     color : '#3A7E28',
     tasks: [
@@ -67,3 +67,4 @@ let cardsList = [
 ];
 
 render(<KanbanBoard cards={cardsList}/>, document.getElementById('root'));
+

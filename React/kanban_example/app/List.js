@@ -6,13 +6,13 @@ import marked from 'marked';
 
 class List extends Component{
     render(){
-        var cards = this.props.cards.map((card)=>{
-            return <Card id={card.id}
+        let cards = this.props.cards.map((card, i)=>{
+            return <Card key = {i} id = {card.id}
+            id = {card.id}
             title = {card.title}
-            description={card.description}
+            description = {card.description}
             color = {card.color}
-            tasks={card.tasks}/>
-
+            tasks = {card.tasks}/>
         });
         return(
             <div className="list">

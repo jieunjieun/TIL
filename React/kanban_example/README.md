@@ -3,6 +3,10 @@ Important Update
 
 Facebook released a tool to create React Apps with no need for configurations or boilerplates. If you're just begining to learn React, you might want to use create-react-app instead of using this boilerplate project.
 
+페이스북은 configuration이나 보일러플레이트 없이 리액트 앱을 만들 수 있는 도구를 출시했습니다. 당신이 React를 배우기 시작하였다면 보일러 플레이트 대신에 create-react-app 을 써보세용
+
+
+
 ```sh
 npm install -g create-react-app
 
@@ -15,9 +19,11 @@ npm start
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
 
+그리고 http://localhost:3000을 이용해서 당신의 app을 확인해보세요 그리고 당신이 일을 전개할 준비가 되었다면 `npm run build`를 이용해서 minified 번들을 작성해보세요 
+
 <img src='https://camo.githubusercontent.com/506a5a0a33aebed2bf0d24d3999af7f582b31808/687474703a2f2f692e696d6775722e636f6d2f616d794e66434e2e706e67' width='600' alt='npm start'>
 
-For more information on create-react-app, take a look at [Dan Abramov's blog post ](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) and the [Github repository](https://github.com/facebookincubator/create-react-app)
+이 게시글들이 도움이 될것입니다. [Dan Abramov's blog post ](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) , [Github repository](https://github.com/facebookincubator/create-react-app)
 
 Behind the scenes, create-react-app uses Webpack and Babel. 
 
