@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import Card from './Card';
 import {render} from 'react-dom';
 import marked from 'marked';
@@ -20,7 +20,14 @@ class List extends Component{
                 {cards}
                 </div>
         );
-        
     }
-}
+};
+List.PropTypes = {
+    id : PropTypes.number,
+    title : PropTypes.string,
+    description : PropTypes.string,
+    color : PropTypes.string,
+    tasks : PropTypes.arrayOf(PropTypes.object)
+};
+
 export default List;
