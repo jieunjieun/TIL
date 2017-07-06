@@ -27,4 +27,4 @@
 </Students>
 ```
 
-![DOM구조](/Users/jieunpark/Desktop/TIL/web study/DOM구조.png)
+![DOM구조](./img/DOM구조.png)
