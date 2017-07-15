@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputNum">
+    <input type="button" id="submit" onclick="checkNum()" value = "버튼" style="width : 4em; height : 4em; font-size : 4em;">
+    <span id="result"></span>
+
+</body>
+
+<script type="text/javascript">
+    var ranNum = Math.floor(Math.random() * 10) + 1;
+    var count = 0;
+
+    function checkNum(){   
+    var Number = document.getElementById('inputNum').value;
+    var min = 1; 
+    var max = 10;
+  
+
+
+    if(Number < min || Number > max){
+        alert("범위초과함!");
+        count ++;
+    }
+    else if(Number < ranNum){
+        alert(Number + "보다 큰숫자입니다");
+        count ++;
+    }
+    else if(Number == ranNum){
+        alert(Number + "정답!");
+    
+    }
+   else if(Number > ranNum){
+        alert(Number + "보다 작은 숫자입니당!");
+        count++;
+    }
+  if(count === 5){
+        alert('게임 끝');
+    }
+    
+    
+    
+}
+
+</script>
+</html>
