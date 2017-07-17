@@ -27,4 +27,4 @@
 </Students>
 ```
 
-![DOM구조](./img/DOM구조.png)
+![DOM구조](https://github.com/Ground-Silver0903/TIL/blob/master/web%20study/img/DOM%EA%B5%AC%EC%A1%B0.png?raw=true)
