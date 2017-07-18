@@ -96,7 +96,7 @@ const todoItems = todos.map((todo) =>
 )
 ```
 
-만약에 렌더링할 아이템에 안정된 id 를 갖고있지 않다면 item index를 써야한다.  하지만 index를 쓰는 방법은 추천하지 않는다. 
+만약에 렌더링할 아이템에 안정된 id 를 갖고있지 않다면 item index를 써야한다.  하지만 index를 쓰는 방법은 추천하지 않는다고한다.
 
 ```jsx
 const todoItems = todos.map((todo, index) =>

@@ -27,8 +27,8 @@ constructor(props){ //constructor 메소드의 파라미터는 props이다.
 	value : 0
   };
    this.handleClick = this.handleClick.bind(this);
-} //constructor 에서 binding 해주는게 더 좋음
-  
+} //constructor 에서 binding 해주는게 더 좋다고함 
+ 
   handleClick(){
     this.setState({
       value : this.state.value + 1
