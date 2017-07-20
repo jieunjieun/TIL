@@ -31,5 +31,3 @@ animalSchema.index({ name: 1, type: -1 }); // schema level
 ```
 
 
-
-힘들구만
