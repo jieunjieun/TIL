@@ -4,5 +4,7 @@
 
 
 
-투비컨티뉴
+## mount
+
+컴포넌트가 처음 실행될 때를 말함. 컴포넌트가 시작되면 우선 context, defaultProps, state 저장함. 그 다음 **componentWillMount**(호출 중 props, state 변경불가)메소드 호출 후 render 로 컴포넌트를 DOM 에 넣은 후 **componentDidMount**(state변경 불가, setState 로만 변경) 메소드를 호출한다. 
 
