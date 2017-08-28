@@ -14,3 +14,6 @@ for i in range(0,10):
     print title[i].a['title']
 ```
 
+
+
+> nth-child 는 beautifulsoup 에서 지원x
